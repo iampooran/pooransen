@@ -1,0 +1,107 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem; 
+}
+
+/* Variables */
+:root{
+    --main-color:#647bff;
+    --body-color:#090a1a;
+    --container-color:#171b3c;
+    --bg-color:#fff;   
+    --box-color:#0d0f26;
+    --heading-color:#222231;
+}
+
+/* .heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #222231;
+    text-align: center;
+} */
+.heading2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #222231;
+    text-align: center;
+    font-weight: 700;
+}
+
+.check_list {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  
+  .check_list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .check_list li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 5px;
+      height: 11px;
+      border-width: 0 2px 2px 0;
+      border-style: solid;
+      border-color: #00a8a8;
+      transform-origin: bottom left;
+      transform: rotate(45deg);
+  }
+  
+  
+  
+  /* Boilerplate stuff */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+.sectionSkills {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  
+  .sectionSkills {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+.skillDiv {
+    margin: auto;
+  }
+  
+  .gridSkills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10rem;
+  }
+
+  .skillContainer{
+    position: relative;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .gridSkills{
+      column-gap: 5rem;
+    }
+  }
+  
