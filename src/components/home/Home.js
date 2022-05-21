@@ -13,7 +13,7 @@ export default function Home() {
           <br />
           <div className='home-text'>
             <h3>Hello</h3>
-            <h2>I'm <span className='pooran'>Pooran</span></h2>
+            <h2>I'm <span className='pooran'>Pooran Sen</span></h2>
             <p>
             A self-motivated Web Developer with huge knowledge and proficiency in JavaScript, HTML , CSS, and mobile responsive web development, as well as strong skills and ability in writing clean and efficient code.
             </p>
