@@ -8,9 +8,28 @@ export default function Home() {
     });
   }, []);
 
+  const handleLogOut = () => {
+    console.log("handleLogOut");
+
+    window.parent.postMessage(
+      JSON.stringify({
+        event_code: "help",
+        data: {},
+      }),
+      "*"
+    );
+  };
+
   return (
     <>
       <section className="home container" id="home">
+        <button
+          onClick={() => {
+            handleLogOut();
+          }}
+        >
+          Log Out
+        </button>
         <div className="home-content">
           <div className="home-img">
             <i className="bx bx-code-alt"></i>
