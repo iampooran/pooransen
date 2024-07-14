@@ -6,19 +6,26 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import { useEffect } from "react";
+
+console.log("Changes done!!");
+// useEffect(() => {
+window.addEventListener("message", (eventData) => {
+  console.log("eventData::React::", eventData);
+});
+// }, []);
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Education/>
-      <Contact/>
-      <Footer/>
-      
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Education />
+      <Contact />
+      <Footer />
     </>
   );
 }
