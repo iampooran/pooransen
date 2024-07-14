@@ -15,9 +15,28 @@ window.addEventListener("message", (eventData) => {
 });
 // }, []);
 
+const handleLogOut = () => {
+  console.log("handleLogOut");
+
+  window.parent.postMessage(
+    JSON.stringify({
+      event_code: "help",
+      data: {},
+    }),
+    "*"
+  );
+};
+
 function App() {
   return (
     <>
+      <button
+        onClick={() => {
+          handleLogOut();
+        }}
+      >
+        Log Out
+      </button>
       <Navbar />
       <Home />
       <About />
