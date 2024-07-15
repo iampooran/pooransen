@@ -9,7 +9,7 @@ export default function Home() {
       let parsedEventData = JSON.parse(eventData.data);
 
       console.log("eventData::React2::", parsedEventData);
-      if (parsedEventData.event_code === "welcome-screen") {
+      if (parsedEventData.event_code === "welcome-screen" || parsedEventData.event_code === "userwelcome-screen") {
         setOpeningMessage("welcome screen called!");
       }
     });
